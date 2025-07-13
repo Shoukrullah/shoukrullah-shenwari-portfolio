@@ -1,0 +1,19 @@
+.callMeContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.callMeContainer span {
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 1px;
+
+}
+.callMeContainer svg {
+    color: var(--green--brand--1);
+}

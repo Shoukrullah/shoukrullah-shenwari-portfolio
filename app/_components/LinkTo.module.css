@@ -1,0 +1,40 @@
+.Link {
+  background-color: var(--primary--color);
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  transition: all .05s linear;
+  color: var(--light--brand--1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  font-size: small;
+  min-width: 8rem;
+  cursor: pointer;
+  
+}
+.Link:hover,
+.Link:active {
+    opacity: .9;
+}
+
+.deleteIssueButton {
+  width: 12rem;
+  margin-top: 1rem;
+  padding: 0;
+  background-color: var(--error--brand--1);
+  height: 2.8rem;
+
+  
+}
+.deleteIssueButton svg {
+  position: relative;
+  left: .6rem;
+  top: -.1rem;
+  height: 2.8rem !important;
+}
+.deleting {
+background-color: var(--light--brand--1);
+color: var(--dark--brand--1);
+}

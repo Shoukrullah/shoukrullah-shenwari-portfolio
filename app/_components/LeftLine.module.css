@@ -1,0 +1,29 @@
+.LeftLineContainer {
+    align-items: center;
+    content: '';
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 4rem;
+    height: 40rem;
+    justify-content: space-between;
+    position: absolute;
+    width: 1.5rem;
+    z-index: 99999;
+}
+.LeftLineContainer::after {
+    position: absolute;
+    content: '';
+    width: 0.1em;
+    height: 26rem;
+    top: 10rem;
+    background-color: var(--dark--brand--4);
+}
+.LeftLineContainer p {
+    transform: rotate(270deg);
+    white-space: nowrap;
+    position: relative;
+}
+.LeftLineContainer p:nth-child(1) {
+    top: 4rem;
+}

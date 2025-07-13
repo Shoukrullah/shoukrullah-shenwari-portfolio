@@ -1,0 +1,26 @@
+.WorkDoneContainer {
+    display: flex;
+    position: relative;
+    width: fit-content;
+}
+.WorkDoneContainer > div:first-child span  {
+    position: relative;
+    top: 1rem;
+    left: .5rem;
+    font-size: large;
+    /* color: var(--dark--brand--1); */
+
+}
+.WorkDoneContainer > div:nth-child(2) {
+    padding-left: .4rem;
+}
+
+.WorkDoneContainer > div:nth-child(2) p:first-child {
+    font-size: 5rem;
+}
+.WorkDoneContainer > div:nth-child(2) p:nth-child(2) {
+    font-size: small;
+    color: var(--dark--brand--3);
+    position: relative;
+    bottom: 1rem;
+}

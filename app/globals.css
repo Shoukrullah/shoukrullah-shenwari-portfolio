@@ -1,0 +1,74 @@
+/* TYPOGRAPHY SYSTEM
+
+01--Font sizes (px):
+10 / 10.4 / 12 / 14 / 16 / 22 / 24 / 28 / 32 / 40 / 64
+
+02--SPACING(gap) System (px):
+2 / 5 / 
+
+03--Some more Arbitrary Colors:
+
+04--Line heights:
+1.4 / 
+
+05--Shadows:
+
+06--Border--radius: */
+
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root {
+  --primary--color: #4c51bf;
+  --secondary--color: #bee3f8;
+  --ternary--color: ;
+  --dark--brand--1: #1A202C;
+  --dark--brand--2: #2d3748;
+  --dark--brand--3: #4a5568;
+  --dark--brand--4: #E2E8F0;
+  --light--brand--1: #ececec;
+  --error--brand--1: #c53030;
+  --error--brand--2: #fed7d7;
+  --green--brand--1: #38a169;
+  --green--brand--2: #c6f6d5;
+  --bg--color--1: #efefef;
+}
+
+/* @font-face {
+    font-family: Manrope;
+    src: url('../public/fonts/Stalemate-Regular.ttf');
+} */
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-family: monospace;
+    color: var(--dark--brand--1);
+    /* background-color: var(--bg--color--1); */
+
+}
+
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* ------------------------------------------*/
+/* Utility Classes
+/* ------------------------------------------*/
+.max-width {
+  max-width: 122rem;
+  margin: 0 auto;
+}
