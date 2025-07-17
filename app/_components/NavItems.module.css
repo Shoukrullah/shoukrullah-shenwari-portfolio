@@ -13,7 +13,7 @@
 }
 .navContainer ul li:hover,
 .navContainer ul li:active {
-  color: var(--dark--brand--2);
+  color: var(--dark--brand--1);
 }
 .navContainer ul li:hover::after {
     content: '';

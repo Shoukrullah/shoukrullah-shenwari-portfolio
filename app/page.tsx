@@ -1,5 +1,5 @@
 import HomePageInfoArea from "./_components/HomePageInfoArea";
-import LeftLine from "./_components/LeftLine";
+// import LeftLine from "./_components/LeftLine";
 import Photo from "./_components/Photo";
 import styles from "./page.module.css";
 function HomePage() {
@@ -7,8 +7,7 @@ function HomePage() {
     <div className={`${styles.HomePageContainer} max-width`}>
       <div className={styles.homeInfoGridContainer}>
         <HomePageInfoArea />
-        <LeftLine />
-
+        {/* <LeftLine /> */}
         <div className={styles.photoContainer}>
           <Photo />
         </div>

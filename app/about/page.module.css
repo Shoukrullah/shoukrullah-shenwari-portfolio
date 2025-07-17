@@ -1,0 +1,85 @@
+.aboutContainer {
+  margin-top: 5rem;
+}
+.underAboutContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+.photoContainer div {
+  border-left: 1px solid var(--dark--brand--4);
+  border-right: 1px solid var(--dark--brand--4);
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.photoContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.infoAndUlContainer ul {
+  padding-top: 1rem;
+  display: grid;
+  padding-bottom: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.infoAndUlContainer ul li {
+  padding: 1rem 0;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.infoAndUlContainer ul li span svg {
+  position: relative;
+  top: 0.2rem;
+  right: 0;
+  font-size: large;
+  color: var(--primary--color);
+}
+.infoAndUlContainer ul li p:nth-child(2) {
+  font-weight: 600;
+  color: var(--dark--brand--3);
+}
+.infoAndUlContainer ul li p:nth-child(3) {
+  color: var(--dark--brand--1);
+}
+.goal {
+  display: flex;
+  gap: 0.9rem;
+}
+.goal span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary--color);
+  padding: 0 0.5rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: var(--secondary--color);
+}
+.skillsContainer {
+  padding-top: 5rem;
+}
+ .servicesParent {
+  margin: .5rem 0;
+   text-align: center; 
+} 
+
+@media screen and (max-width:576px) {
+  .infoAndUlContainer ul {
+  grid-template-columns: 1fr;
+}
+}
+@media screen and (min-width:768px) {
+  .underAboutContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  text-align: start;
+}
+}

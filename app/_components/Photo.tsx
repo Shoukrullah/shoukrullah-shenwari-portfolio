@@ -1,4 +1,4 @@
-import pic from "@/public/pictures/my new photo.png";
+import pic from "@/public/pictures/my new photo.webp";
 import Image from "next/image";
 
 function Photo() {

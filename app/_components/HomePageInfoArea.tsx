@@ -12,7 +12,7 @@ function HomePageInfoArea() {
         <WorkDone count={2} label="Years of Experience" />
       </div>
       <div className={styles.whoAmI}>
-        <Heading fontSize="10rem" margin="6rem 0 0 0">
+        <Heading fontSize="12rem" margin="6rem 0 0 0">
           Hello!
         </Heading>
 
@@ -24,7 +24,7 @@ function HomePageInfoArea() {
         </div>
 
         <div className={styles.linkContainer}>
-          <LinkTo bgColor="var(--dark--brand--3)" href="/about">
+          <LinkTo bgColor="var(--primary--color)" href="/about">
             About me
           </LinkTo>
         </div>

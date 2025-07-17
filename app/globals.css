@@ -35,7 +35,7 @@ html {
   --dark--brand--1: #1A202C;
   --dark--brand--2: #2d3748;
   --dark--brand--3: #4a5568;
-  --dark--brand--4: #E2E8F0;
+  --dark--brand--4:  #A0AEC0;
   --light--brand--1: #ececec;
   --error--brand--1: #c53030;
   --error--brand--2: #fed7d7;
@@ -43,7 +43,6 @@ html {
   --green--brand--2: #c6f6d5;
   --bg--color--1: #efefef;
 }
-
 /* @font-face {
     font-family: Manrope;
     src: url('../public/fonts/Stalemate-Regular.ttf');
@@ -56,6 +55,9 @@ body {
     color: var(--dark--brand--1);
     /* background-color: var(--bg--color--1); */
 
+}
+body::selection {
+    background-color: var(--secondary--color);
 }
 
 li {
