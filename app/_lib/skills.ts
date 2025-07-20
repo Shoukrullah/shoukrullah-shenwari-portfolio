@@ -38,7 +38,7 @@ const skills:SkillsShape[] =[
     },
     {
         id: 7,
-        skill:'Nextjs',
+        skill:'Next.js',
         percentage:90,
     },
     {

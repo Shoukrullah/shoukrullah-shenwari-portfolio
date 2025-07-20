@@ -8,13 +8,15 @@ interface Props {
   marginTop?: number;
   width?: string;
   bgColor?: string;
+  fontSize?: string;
 }
 
-function LinkTo({ children, href, marginTop, width, bgColor }: Props) {
+function LinkTo({ children, href, marginTop, width, bgColor,fontSize }: Props) {
   const newStyles: CSSProperties = {
     marginTop: marginTop + "px",
     width,
     backgroundColor: bgColor,
+    fontSize
   };
   return (
     <Link href={href} className={styles.Link} style={newStyles}>

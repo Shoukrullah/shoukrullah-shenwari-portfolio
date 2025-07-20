@@ -12,7 +12,7 @@ function Skills() {
         My Skills
       </Heading>
       <p>
-        I Really love to build modern Web Applications with{" "}
+        I Really love to build modern Web Applications with
         <strong>React</strong> and <strong>Nextjs</strong>. I began learning Web
         Development in 2023 through online courses and projects. Since then,
         I&apos;ve learned and still learning the modern web technologies.
@@ -26,13 +26,11 @@ function Skills() {
                 strokeWidth={2}
                 value={skill.percentage}
                 styles={buildStyles({
-                  pathColor: "#4c51bf",
-
+                  pathColor: "#4c51bd",
                   trailColor: "#bee3f8",
                   textSize: "1.3rem",
                   textColor: "#2d3748",
                   pathTransitionDuration: 0.5,
-
                   //   strokeLinecap: "butt",
                 })}
                 text={`${skill.percentage}`}

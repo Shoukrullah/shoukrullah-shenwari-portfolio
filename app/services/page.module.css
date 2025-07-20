@@ -1,0 +1,20 @@
+.servicesPageContainer {
+    margin-top: 4rem;
+}
+.servicesPageContainer > p {
+    color: var(--dark--brand--3);
+    text-align: center;
+}
+/* @media screen and (max-width: 576px) {
+  .infoAndUlContainer ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .underAboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    text-align: start;
+  }
+} */

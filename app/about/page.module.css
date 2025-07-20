@@ -65,21 +65,21 @@
 .skillsContainer {
   padding-top: 5rem;
 }
- .servicesParent {
-  margin: .5rem 0;
-   text-align: center; 
-} 
+.servicesParent {
+  margin: 0.5rem 0;
+  text-align: center;
+}
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   .infoAndUlContainer ul {
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
-}
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .underAboutContainer {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  text-align: start;
-}
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    text-align: start;
+  }
 }
