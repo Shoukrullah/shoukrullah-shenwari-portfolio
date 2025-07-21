@@ -9,9 +9,11 @@ interface Props {
   textTransform?: CSSProperties["textTransform"];
   letterSpacing?: CSSProperties["letterSpacing"];
   wordSpacing?: CSSProperties["wordSpacing"];
+  fontWeight?: CSSProperties['fontWeight'] | string ;
 }
 function Heading({
   fontSize,
+  fontWeight = 'normal',
   margin,
   children,
   textAlign,
@@ -28,8 +30,9 @@ function Heading({
     textTransform,
     letterSpacing,
     wordSpacing,
+    fontWeight
   };
-  return <div style={styles}>{children}</div>;
+  return <h1 style={styles}>{children}</h1>;
 }
 
 export default Heading;

@@ -17,7 +17,7 @@ function RootLayout({ children }: Props) {
       <body className={Inter.className}>
         <Navigation />
         {children}
-        </body>
+      </body>
     </html>
   );
 }

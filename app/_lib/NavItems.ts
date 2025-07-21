@@ -20,10 +20,10 @@ const navItems:NavItemsShape[] = [
   //   label: 'Resume',
   //   href: '/resume'
   // },
-  // {
-  //   id: 4,
-  //   label: 'Contact',
-  //   href: '/contact'
-  // },
+  {
+    id: 4,
+    label: 'Contact',
+    href: '/contact'
+  },
 ];
 export default navItems

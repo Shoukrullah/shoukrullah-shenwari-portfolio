@@ -1,0 +1,30 @@
+.myInfoContainer {
+  /* background-color: var(--bg--color--1); */
+}
+.myInfoContainer li {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.myInfoContainer span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--secondary--color);
+  /* height: 3rem; */
+}
+.myInfoContainer span svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary--color);
+}
+.myInfoContainer strong {
+  color: var(--dark--brand--2);
+}
+.myInfoContainer p {
+  color: var(--dark--brand--3);
+  margin-top: 0.3rem;
+}
