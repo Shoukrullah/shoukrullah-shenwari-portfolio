@@ -1,11 +1,13 @@
 .aboutContainer {
   margin-top: 5rem;
+  overflow: hidden;
 }
 .underAboutContainer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   text-align: center;
+  margin-top: 2rem;
 }
 .photoContainer div {
   border-left: 1px solid var(--dark--brand--4);

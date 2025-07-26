@@ -14,6 +14,7 @@
   transition: border-color 0.12s linear;
   border-color: var(--dark--brand--2);
   background-color: var(--input--focus--1);
+  transition:  background-color .15ms linear;
 }
 .personalInfo div {
   width: 100%;

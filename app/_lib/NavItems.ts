@@ -4,26 +4,26 @@ interface NavItemsShape {
   href: string;
 }
 
-const navItems:NavItemsShape[] = [
+const navItems: NavItemsShape[] = [
   {
     label: "About Me",
-    href: '/about',
-    id:1
+    href: "/about",
+    id: 1,
   },
   {
     id: 2,
-    label: 'Services',
-    href: '/services'
+    label: "Services",
+    href: "/services",
   },
-  // {
-  //   id: 3,
-  //   label: 'Resume',
-  //   href: '/resume'
-  // },
+  {
+    id: 3,
+    label: "My Projects",
+    href: "/projects",
+  },
   {
     id: 4,
-    label: 'Contact',
-    href: '/contact'
+    label: "Contact",
+    href: "/contact",
   },
 ];
-export default navItems
+export default navItems;

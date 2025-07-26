@@ -5,11 +5,11 @@ import styles from "./page.module.css";
 
 function page() {
   return (
-    <div className={`${styles.servicesPageContainer} max-width`}>
+    <section className={`${styles.servicesPageContainer} max-width`}>
       <ServicesHeader />
       <EachServices />
       <TakeOurServices />
-    </div>
+    </section>
   );
 }
 

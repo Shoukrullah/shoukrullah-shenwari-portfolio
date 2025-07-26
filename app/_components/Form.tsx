@@ -1,36 +1,33 @@
 "use client";
 import styles from "./Form.module.css";
-import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import formSchema from "../_lib/formSchema";
 import { toast, Toaster } from "react-hot-toast";
+import { RxCheck } from "react-icons/rx";
+import ScrollFadeIn from "../_animations/ScrollFadeIn";
 
 function Form() {
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors, dirtyFields, isSubmitting, },
+    formState: { errors, dirtyFields, isSubmitting },
   } = useForm<FormShape>({ resolver: zodResolver(formSchema) });
   type FormShape = z.infer<typeof formSchema>;
 
   const onSubmit = (data: FormShape) => {
-    
     console.log(data);
     toast("Thank you! We will answer just a bit later.", {
       style: { textAlign: "center" },
+      icon: <RxCheck size={40} color=" #4a5568" />,
     });
     reset();
   };
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
-      >
+      <ScrollFadeIn y={0} x={50} stiffness={60} delay={0.2}>
         <form
           className={styles.formContainer}
           onSubmit={handleSubmit(onSubmit)}
@@ -84,7 +81,7 @@ function Form() {
             </button>
           </div>
         </form>
-      </motion.div>
+      </ScrollFadeIn>
       <Toaster />
     </>
   );

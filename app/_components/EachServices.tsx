@@ -7,6 +7,7 @@ import { RxDashboard } from "react-icons/rx";
 import { BsGlobe2 } from "react-icons/bs";
 import { RxImage } from "react-icons/rx";
 import { ReactNode } from "react";
+import ScrollFadeIn from "../_animations/ScrollFadeIn";
 
 function EachServices() {
   return (
@@ -30,12 +31,12 @@ function EachService({ info }: { info: ServicesShape }) {
     redesign: <RxImage />,
   };
   return (
-    <li>
+    <ScrollFadeIn delay={0.2} isList>
       <div className={styles.iconContainer}>{iconMap[info.icon!] || null}</div>
       <div className={styles.infoContainer}>
         <strong>{info.label}</strong>
         <p>{info.description}</p>
       </div>
-    </li>
+    </ScrollFadeIn>
   );
 }

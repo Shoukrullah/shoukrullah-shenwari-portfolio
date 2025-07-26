@@ -87,3 +87,6 @@ input {
 .relative {
   position: relative;
 }
+.hidden {
+  overflow: hidden;
+}

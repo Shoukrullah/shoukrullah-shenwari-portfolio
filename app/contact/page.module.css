@@ -16,7 +16,8 @@
   font-size: small;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  /* overflow: hidden; */
 }
 .footerContainer p {
   color: var(--dark--brand--3);

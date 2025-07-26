@@ -3,15 +3,15 @@ import { BsYoutube } from "react-icons/bs";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { SiX } from "react-icons/si";
 import styles from "../page.module.css";
-import { motion } from "framer-motion";
+import ScrollFadeIn from "@/app/_animations/ScrollFadeIn";
 
 function SocialMedia() {
   return (
-    <motion.div
+    <ScrollFadeIn
+      y={"100%"}
+      delay={0.1}
+      stiffness={90}
       className={styles.socialMediaContainer}
-      initial={{ y: "100%", opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.1, type: "spring", stiffness: 90 }}
     >
       <span>
         <RxLinkedinLogo />{" "}
@@ -25,7 +25,7 @@ function SocialMedia() {
       <span>
         <BsYoutube />
       </span>
-    </motion.div>
+    </ScrollFadeIn>
   );
 }
 
