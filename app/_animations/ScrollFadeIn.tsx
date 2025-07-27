@@ -1,4 +1,5 @@
 "use client";
+
 import { useInView, motion, Easing } from "framer-motion";
 import { useRef } from "react";
 
@@ -11,8 +12,8 @@ interface Props {
   damping?: number;
   x?: string | number;
   type?: "spring" | "tween";
-  duration?: number | undefined;
-  ease?: Easing | Easing[] | undefined;
+  duration?: number;
+  ease?: Easing | Easing[];
   isList?: boolean;
   className?: string;
 }
@@ -26,47 +27,35 @@ function ScrollFadeIn({
   stiffness = 130,
   x = 0,
   type = "spring",
-  duration = undefined,
-  ease = undefined,
+  duration,
+  ease,
   isList = false,
   className,
 }: Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const boxVariants = {
-    hidden: {
-      opacity,
-      y,
-      x,
-    },
-    visible: isInView ? { opacity: 1, x: 0, y: 0 } : {},
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -2% 0px" });
+
+  const variants = {
+    hidden: { opacity, x, y },
+    visible: { opacity: 1, x: 0, y: 0 },
   };
-  if (!isList)
-    return (
-      <motion.div
-        ref={ref}
-        className={className}
-        variants={boxVariants}
-        initial="hidden"
-        animate="visible"
-        transition={{ type, stiffness, damping, delay, duration, ease }}
-      >
-        {children}
-      </motion.div>
-    );
-  else
-    return (
-      <motion.li
-        ref={ref}
-        className={className}
-        variants={boxVariants}
-        initial="hidden"
-        animate="visible"
-        transition={{ type, stiffness, damping, delay, duration, ease }}
-      >
-        {children}
-      </motion.li>
-    );
+
+  const transition = { type, stiffness, damping, delay, duration, ease };
+
+  const MotionTag = isList ? motion.li : motion.div;
+
+  return (
+    <MotionTag
+      ref={ref}
+      className={className}
+      variants={variants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      transition={transition}
+    >
+      {children}
+    </MotionTag>
+  );
 }
 
 export default ScrollFadeIn;

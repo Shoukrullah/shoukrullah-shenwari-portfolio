@@ -1,7 +1,8 @@
 .callMeContainer {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
+    cursor: pointer;
 }
 .callMeContainer span {
     width: 2.1rem;

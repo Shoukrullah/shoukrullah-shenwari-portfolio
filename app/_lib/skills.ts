@@ -1,4 +1,4 @@
-interface SkillsShape {
+export interface SkillsShape {
   id: number;
   skill: string;
   percentage: number;

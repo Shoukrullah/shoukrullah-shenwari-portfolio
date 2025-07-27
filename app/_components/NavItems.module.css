@@ -1,5 +1,5 @@
 .navContainer ul {
-  display: flex;
+  display: none;
   gap: 3rem;
   color: var(--dark--brand--3);
   transition: all 0.15s;
@@ -33,3 +33,52 @@
     left: 0;
     background-color: var(--primary--color);
 } 
+
+
+.active {
+  /* position: relative; */
+}
+.active ul {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.527);
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(.4rem);
+}
+.active ul li {
+  color: var(--light--brand--1);
+}
+.active ul li:hover {
+  color: var(--secondary--color);
+}
+.cross {
+  color: var(--light--brand--1);
+  position: absolute;
+  top: 5rem;
+  z-index: 99999999;
+  right: 4rem;
+  cursor: pointer;
+}
+.cross:hover {
+  color: var(--error--brand--2);
+}
+
+
+.activeLinkRes {
+  color: var(--dark--brand--2) !important;
+}
+
+@media screen and (min-width:768px) {
+  .navContainer ul {
+    display: flex;
+  }
+  
+}

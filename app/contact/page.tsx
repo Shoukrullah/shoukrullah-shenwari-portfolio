@@ -5,7 +5,7 @@ import SocialMedia from "./_components/SocialMedia";
 
 function page() {
   return (
-    <section className="max-width relative">
+    <section className="max-width relative ">
       <ContactPageHeader />
       <Contact />
       <SocialMedia />

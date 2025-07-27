@@ -8,8 +8,8 @@ function ContactPageHeader() {
       <div>
         <Heading
           fontSize="3rem"
-          margin="2rem 0 .5rem 0"
-          letterSpacing={"0.1rem"}
+          margin="3.5rem 0 0 0"
+          letterSpacing="0.1rem"
           textTransform="uppercase"
           textAlign="center"
         >
