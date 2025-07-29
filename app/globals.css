@@ -34,7 +34,8 @@ html {
   --dark--brand--2: #2d3748;
   --dark--brand--3: #4a5568;
   --dark--brand--4: #a0aec0;
-  --light--brand--1: #ececec;
+  --light--brand--1: #f7fafc;
+  --light--brand--2: #cbd5e0;
   --error--brand--1: #c53030;
   --error--brand--2: #f0a4a4;
   --green--brand--1: #38a169;
@@ -51,6 +52,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   font-family: monospace;
+  padding: 0 2rem;
   color: var(--dark--brand--1);
   /* background-color: var(--bg--color--1); */
 }
@@ -89,4 +91,9 @@ input {
 }
 .hidden {
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+  }
 }

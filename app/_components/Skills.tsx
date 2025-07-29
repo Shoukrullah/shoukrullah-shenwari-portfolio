@@ -62,7 +62,7 @@ function AnimatedSkillProgress({ skill }: { skill: SkillsShape }) {
       <CircularProgressbar
         strokeWidth={2}
         value={displayProgress}
-        text={`${Math.round(displayProgress)}%`}
+        text={`${Math.round(displayProgress)}`}
         styles={buildStyles({
           pathColor: "#4c51bd",
           trailColor: "#bee3f8",

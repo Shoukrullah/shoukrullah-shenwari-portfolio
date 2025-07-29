@@ -33,7 +33,7 @@ function ScrollFadeIn({
   className,
 }: Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -2% 0px" });
+  const isInView = useInView(ref, { once: true });
 
   const variants = {
     hidden: { opacity, x, y },

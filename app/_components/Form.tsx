@@ -48,7 +48,6 @@ function Form() {
               <input
                 className={`${errors.email ? styles.borderRed : dirtyFields.name ? styles.green : ""}`}
                 type="text"
-                autoComplete="off"
                 placeholder="Your email"
                 {...register("email")}
               />

@@ -35,9 +35,6 @@
 } 
 
 
-.active {
-  /* position: relative; */
-}
 .active ul {
   display: flex;
   width: 100vw;
@@ -54,7 +51,7 @@
   backdrop-filter: blur(.4rem);
 }
 .active ul li {
-  color: var(--light--brand--1);
+  color: var(--light--brand--2);
 }
 .active ul li:hover {
   color: var(--secondary--color);
@@ -73,8 +70,9 @@
 
 
 .activeLinkRes {
-  color: var(--dark--brand--2) !important;
+  color: var(--light--brand--1) !important;
 }
+
 
 @media screen and (min-width:768px) {
   .navContainer ul {
