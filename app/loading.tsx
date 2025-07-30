@@ -1,11 +1,9 @@
-
+import styles from "./page.module.css";
 
 function loading() {
-    return (
-        <div>
-            loading...
-        </div>
-    )
+  return (
+    <div className={`${styles.SkeletonContainer} max-width`}>loading...</div>
+  );
 }
 
-export default loading
+export default loading;

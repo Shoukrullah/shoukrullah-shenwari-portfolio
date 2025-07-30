@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 .workDoneArea {
   display: flex;
@@ -17,16 +17,16 @@
 }
 .whoAmI {
   margin-top: -2rem;
-  padding-left: 5rem;
+  padding-left: 0rem;
   text-align: center;
 }
 .whoAmI p {
   font-size: 1.4rem;
-  white-space: nowrap;
+  white-space: wrap;
 }
 .myContainer {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 .myContainer span {
@@ -85,8 +85,23 @@
     padding-left: 10rem;
     margin-top: -3rem;
   }
+  .whoAmI p {
+    white-space: nowrap;
+  }
   .myContainer {
     position: relative;
+    align-items: center;
     bottom: 2.5rem;
   }
+}
+
+.SkeletonContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  top: 0;
+  content: '';
+  justify-content: center;
+  align-items: center;
 }

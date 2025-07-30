@@ -36,6 +36,6 @@
 @media screen and (max-width:768px) {
 
   .takeServicesContainer > div:nth-child(2) svg {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 }

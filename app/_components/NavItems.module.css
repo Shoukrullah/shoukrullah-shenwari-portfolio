@@ -48,16 +48,16 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(.4rem);
+  backdrop-filter: blur(.6rem);
 }
 .active ul li {
-  color: var(--light--brand--2);
+  color: rgba(255, 255, 255, 0.699) !important;
 }
 .active ul li:hover {
-  color: var(--secondary--color);
+  color: white !important;
 }
 .cross {
-  color: var(--light--brand--1);
+  color: var(--dark--brand--1);
   position: absolute;
   top: 5rem;
   z-index: 99999999;
