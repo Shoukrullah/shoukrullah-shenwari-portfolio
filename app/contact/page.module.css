@@ -30,6 +30,7 @@
   cursor: pointer;
   transition: all 0.12s linear;
   margin-bottom: 1rem;
+  color: var(--input--bg--color);
 }
 .socialMediaContainer span:hover {
   color: var(--primary--color);

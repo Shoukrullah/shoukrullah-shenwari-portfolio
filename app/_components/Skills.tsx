@@ -17,7 +17,7 @@ function Skills() {
         <Heading fontSize="3rem" textAlign="center" margin="1rem 0 0 0">
           My Skills
         </Heading>
-        <p>
+        <p className="paragraph-color--2 ">
           I really love to build modern Web Applications with{" "}
           <strong>React</strong> and <strong>Next.js</strong>. I began learning
           Web Development in 2023 through online courses and projects. Since
@@ -64,10 +64,10 @@ function AnimatedSkillProgress({ skill }: { skill: SkillsShape }) {
         value={displayProgress}
         text={`${Math.round(displayProgress)}`}
         styles={buildStyles({
-          pathColor: "#4c51bd",
+          pathColor: "var(--primary--color)",
           trailColor: "#bee3f8",
           textSize: "1.1rem",
-          textColor: "#2d3748",
+          textColor: "var(--dark--brand--2)",
         })}
       />
     </div>

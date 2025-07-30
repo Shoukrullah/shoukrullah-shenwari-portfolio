@@ -11,7 +11,7 @@ function MyInfo() {
         <Heading fontSize="3rem" margin="0 0 .5rem 0">
           About Me
         </Heading>
-        <p>
+        <p className="paragraph-color--2">
           I&apos;m a <strong>Front-End Developer</strong> who loves turning
           ideas into clean, fast, responsive and user-friendly websites.
         </p>

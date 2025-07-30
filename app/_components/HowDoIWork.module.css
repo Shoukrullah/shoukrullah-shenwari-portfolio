@@ -3,7 +3,6 @@
   margin-top: 9rem;
 }
 .HowDoIWorkContainer {
-  /* background-color: lightgray; */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
@@ -25,14 +24,12 @@
   top: 4rem;
   height: 24rem;
   width: 1px;
-  left: 1.8rem;
-  /* right: 5rem; */
+  left: 2rem;
   background-color: var(--secondary--color);
   z-index: -99999;
 }
 .HowDoIWorkContainer ul li {
   margin: 2.5rem 0;
-  /* position: relative; */
 }
 .HowDoIWorkContainer ul li span {
   display: inline-flex;
@@ -42,9 +39,9 @@
   position: absolute;
   color: var(--primary--color);
   content: "";
-  background-color: white;
+  background-color: var(--light--brand--1);
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.06);
-  left: 0rem;
+  left: .3rem;
   right: 0;
   width: 3.5rem;
   height: 3.5rem;

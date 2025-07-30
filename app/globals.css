@@ -40,21 +40,55 @@ html {
   --error--brand--2: #f0a4a4;
   --green--brand--1: #38a169;
   --green--brand--2: #c6f6d5;
-  --bg--color--1: #efefef;
   --input--focus--1: rgba(222, 221, 221, 0.142);
+  --shadow--services: rgba(0, 0, 0, 0.06);
+  --shadow--projects: rgba(0, 0, 0, 0.073);
+  --shadow--skills: rgba(0, 0, 0, 0.071);
+
+  --input--bg--color:  #ffff;
+
+  
+  /* --bg--color--1: #efefef; */
 }
+
+[data-theme="dark"] {
+  --dark--brand--1: #f7fafc;
+  --dark--brand--2: #e2e8f0;
+  --dark--brand--3: #A0AEC0;
+  --dark--brand--4: #718096;
+  --light--brand--1: #1a202c;
+  --light--brand--2: #4a5568;
+
+  
+  --shadow--skills: rgba(255, 255, 255, 0.08);
+  --shadow--services: rgba(255, 255, 255, 0.06);
+  --shadow--projects: rgba(199, 196, 196, 0.075);
+
+  --input--focus--1: rgba(223, 223, 223, 0.08);
+  --input--bg--color:  #0f0606;
+
+
+  
+  --background--color--1: rgba(20, 19, 19, 0.977);
+
+}
+
 /* @font-face {
     font-family: Manrope;
     src: url('../public/fonts/Stalemate-Regular.ttf');
 } */
 
 body {
+   background: linear-gradient(
+    90deg,
+    var(--background--color--1) , 
+    var(--background--color--1) 
+  );
+  background-blend-mode: multiply;
   font-size: 1.6rem;
   line-height: 1.4;
   font-family: monospace;
-  padding: 0 2rem;
   color: var(--dark--brand--1);
-  /* background-color: var(--bg--color--1); */
 }
 body::selection {
   background-color: var(--secondary--color);
@@ -92,8 +126,8 @@ input {
 .hidden {
   overflow: hidden;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   body {
-    padding: 0;
+    padding: 0 2rem;
   }
 }

@@ -14,7 +14,7 @@ function SocialMedia() {
       className={styles.socialMediaContainer}
     >
       <span>
-        <RxLinkedinLogo />{" "}
+        <RxLinkedinLogo />
       </span>
       <span>
         <RxGithubLogo />

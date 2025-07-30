@@ -20,7 +20,7 @@ function TakeOurServices() {
         </div>
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.3} stiffness={60}>
-        <SiReact />
+        <SiReact  />
       </ScrollFadeIn>
     </div>
   );

@@ -1,6 +1,4 @@
-.myInfoContainer {
-  /* background-color: var(--bg--color--1); */
-}
+
 .myInfoContainer li {
   display: flex;
   gap: 2rem;
