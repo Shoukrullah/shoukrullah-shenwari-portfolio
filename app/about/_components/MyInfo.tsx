@@ -27,7 +27,7 @@ function MyInfo() {
             <span>
               <RxDrawingPin />
             </span>
-            <p>
+            <p className={styles.justify}>
               My goal is to keep learning and growing as a developer by building
               amazing websites and working on real-world projects that helps
               people. i&apos;m especially interested in performance

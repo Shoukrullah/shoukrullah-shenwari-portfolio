@@ -1,6 +1,6 @@
 import FadeInContainer from "@/app/_animations/FadeInContainer";
 import styles from "@/app/about/page.module.css";
-import logo from "@/public/pictures/Polish_20250714_055114106_result.webp";
+import logo from "@/public/pictures/new faculty no background.png";
 import Image from "next/image";
 function MyImage() {
   return (

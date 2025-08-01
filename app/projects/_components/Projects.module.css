@@ -15,7 +15,6 @@
   overflow: hidden;
   gap: 3rem;
   row-gap: 3rem;
-  /* padding: 0 0 0 .5rem; */
 }
 .firstUL > li {
   border-radius: 0.3rem;
@@ -30,7 +29,6 @@
   height: 0;
   padding-top: calc(100% * (3 / 4));
   position: relative;
-  /* clip-path: 0 0, 100% 0, 100% 100%,0 100%; */
 }
 .imgContainer img {
   width: 100%;

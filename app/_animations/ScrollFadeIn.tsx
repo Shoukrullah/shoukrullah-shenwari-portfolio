@@ -16,6 +16,7 @@ interface Props {
   ease?: Easing | Easing[];
   isList?: boolean;
   className?: string;
+  threshold?: number;
 }
 
 function ScrollFadeIn({
@@ -31,9 +32,13 @@ function ScrollFadeIn({
   ease,
   isList = false,
   className,
+  threshold = 0,
 }: Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, {
+    once: true,
+    margin: `0px 0px ${-threshold}% 0px`,
+  });
 
   const variants = {
     hidden: { opacity, x, y },

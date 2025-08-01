@@ -3,13 +3,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
-    border-bottom: 1px solid var(--dark--brand--4);
+    /* border-bottom: 1px solid var(--dark--brand--4); */
     position: relative;
 }
 .logoNavItems {
     display: flex;
     gap: 8rem;
 }
+
 .menuContainer {
     width: 2.5rem;
     height: 2.5rem;

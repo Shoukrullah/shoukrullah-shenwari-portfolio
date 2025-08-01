@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import EachServices from "../_components/EachServices";
 import TakeOurServices from "../_components/TakeOurServices";
 import ServicesHeader from "./_components/ServicesHeader";
@@ -14,3 +15,7 @@ function page() {
 }
 
 export default page;
+export const metadata: Metadata = {
+  title: "My Services - Shenwari",
+  description: 'Services page of Shoukrullah Shenwari\' portfolio.',
+};

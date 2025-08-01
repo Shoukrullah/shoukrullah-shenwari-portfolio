@@ -31,7 +31,7 @@ function EachService({ info }: { info: ServicesShape }) {
     redesign: <RxImage />,
   };
   return (
-    <ScrollFadeIn delay={0.2} isList>
+    <ScrollFadeIn delay={0.3} isList threshold={20}>
       <div className={styles.iconContainer}>{iconMap[info.icon!] || null}</div>
       <div className={styles.infoContainer}>
         <strong>{info.label}</strong>

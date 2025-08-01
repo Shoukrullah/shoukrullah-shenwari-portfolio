@@ -1,6 +1,8 @@
+import { Metadata } from "next";
 import Home from "./_components/Home";
 import styles from "./page.module.css";
-async function HomePage() {
+function HomePage() {
+
   return (
     <div className={`${styles.HomePageContainer} max-width`}>
       <Home />
@@ -9,3 +11,7 @@ async function HomePage() {
 }
 
 export default HomePage;
+export const metadata:Metadata = {
+ title: 'Homepage - Shenwari',
+ description: 'Homepage of Shoukrullah Shenwari is portfolio.'
+}

@@ -89,6 +89,7 @@ body {
   line-height: 1.4;
   font-family: monospace;
   color: var(--dark--brand--1);
+  scrollbar-width: auto;
 }
 body::selection {
   background-color: var(--secondary--color);
@@ -111,6 +112,10 @@ input {
   max-width: 122rem;
   margin: 0 auto;
 }
+.borderBottom {
+    border-bottom: 1px solid var(--dark--brand--4);
+  
+}
 .text-center {
   text-align: center;
 }
@@ -130,4 +135,16 @@ input {
   body {
     padding: 0 2rem;
   }
+}
+/* Scroll-Bar  */
+
+body::-webkit-scrollbar {
+  width: .7rem;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 1rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary--color);
+  border-radius: .2rem;
 }

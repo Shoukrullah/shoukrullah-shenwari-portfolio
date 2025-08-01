@@ -8,7 +8,7 @@ import skills, { SkillsShape } from "../_lib/skills";
 import ScrollFadeIn from "../_animations/ScrollFadeIn";
 
 import { useRef, useState, useEffect } from "react";
-import { useInView, animate, useMotionValue } from "framer-motion";
+import { useInView } from "framer-motion";
 
 function Skills() {
   return (
@@ -27,7 +27,7 @@ function Skills() {
 
       <ul className={styles.skillsList}>
         {skills.map((skill) => (
-          <ScrollFadeIn key={skill.id} y={50} delay={0.2} isList>
+          <ScrollFadeIn key={skill.id} y={50} delay={0.2}>
             <AnimatedSkillProgress skill={skill} />
           </ScrollFadeIn>
         ))}
@@ -38,38 +38,51 @@ function Skills() {
 
 export default Skills;
 
-// ✅ Improved AnimatedSkillProgress component
-function AnimatedSkillProgress({ skill }: { skill: SkillsShape }) {
-  const ref = useRef<HTMLDivElement | null>(null);
+interface AnimatedSkillProgressProps {
+  skill: SkillsShape;
+}
+
+function AnimatedSkillProgress({ skill }: AnimatedSkillProgressProps) {
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "0px 0px -20% 0px" });
-  const progress = useMotionValue(0);
-  const [displayProgress, setDisplayProgress] = useState(0);
+  const [progress, setProgress] = useState<number>(0);
 
   useEffect(() => {
-    if (isInView) {
-      const animation = animate(progress, skill.percentage, {
-        duration: 1.5,
-        ease: "easeInOut",
-        onUpdate: (value) => setDisplayProgress(value),
-      });
-      return () => animation.stop();
-    }
-  }, [isInView, skill.percentage, progress]);
+    if (!isInView) return;
+
+    let start: number | null = null;
+    const duration = 2000;
+    const target = skill.percentage;
+
+    const animateProgress = (timestamp: number) => {
+      if (start === null) start = timestamp;
+      const elapsed = timestamp - start;
+      const progressValue = Math.min((elapsed / duration) * target, target);
+      setProgress(progressValue);
+
+      if (progressValue < target) {
+        requestAnimationFrame(animateProgress);
+      }
+    };
+
+    requestAnimationFrame(animateProgress);
+  }, [isInView, skill.percentage]);
 
   return (
-    <div ref={ref} className={styles.skillItem}>
+    <li ref={ref} className={styles.skillItem}>
       <p className={styles.skillName}>{skill.skill}</p>
       <CircularProgressbar
         strokeWidth={2}
-        value={displayProgress}
-        text={`${Math.round(displayProgress)}`}
+        value={progress}
+        text={`${Math.round(progress)}`}
         styles={buildStyles({
           pathColor: "var(--primary--color)",
           trailColor: "#bee3f8",
           textSize: "1.1rem",
           textColor: "var(--dark--brand--2)",
+          pathTransition: "none",
         })}
       />
-    </div>
+    </li>
   );
 }

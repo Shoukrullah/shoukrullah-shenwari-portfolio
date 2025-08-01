@@ -48,6 +48,11 @@
   border-radius: 0.3rem;
   background-color: var(--input--bg--color);
   color: var(--dark--brand--1);
+  
+}
+.formContainer textarea::placeholder {
+  color: var(--dark--brand--4);
+
 }
 .formContainer textarea:focus {
   border-color: var(--dark--brand--2);

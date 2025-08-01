@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Footer from "./_components/Footer";
 import Projects from "./_components/Projects";
 import ProjectsHeader from "./_components/ProjectsHeader";
@@ -13,3 +14,7 @@ function page() {
 }
 
 export default page;
+export const metadata: Metadata = {
+  title: "My Projects - Shenwari",
+  description: 'Projects page of Shoukrullah Shenwari\' portfolio.',
+};

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Contact from "./_components/Contact";
 import ContactPageHeader from "./_components/ContactPageHeader";
 import Footer from "./_components/Footer";
@@ -15,3 +16,7 @@ function page() {
 }
 
 export default page;
+export const metadata: Metadata = {
+  title: "Contact Me - Shenwari",
+  description: 'Contact page of Shoukrullah Shenwari\' portfolio.',
+};

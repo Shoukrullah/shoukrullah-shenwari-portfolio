@@ -1,11 +1,14 @@
-import Link from "next/link"
+import Link from "next/link";
+import { CiBarcode } from "react-icons/ci";
 
 function Logo() {
-    return (
-        <div>
-            <Link href={'/'}>Shenwari</Link>
-        </div>
-    )
+  return (
+    <div>
+      <Link href={"/"}>
+        <CiBarcode fill="var(--primary--color)" /> Shenwari
+      </Link>
+    </div>
+  );
 }
 
-export default Logo
+export default Logo;
