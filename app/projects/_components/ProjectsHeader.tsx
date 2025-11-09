@@ -17,8 +17,8 @@ function ProjectsHeader() {
         </Heading>
         <p className="paragraph-color--2">
           Here are some of my
-          <strong className="paragraph-color--1"> Front-End</strong> projects
-          I&apos;ve built using Next.js, React, Vanilla JavaScript and other
+          <strong className="paragraph-color--1"> Front-End and Backend</strong> projects
+          I&apos;ve built using Next.js, React, MySQL, Prisma and other
           modern technologies.
         </p>
       </div>

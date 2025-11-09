@@ -19,7 +19,7 @@ function Skills() {
         </Heading>
         <p className="paragraph-color--2 ">
           I really love to build modern Web Applications with{" "}
-          <strong>React</strong> and <strong>Next.js</strong>. I began learning
+          <strong>Modern Full-Stack technologies</strong>. I began learning
           Web Development in 2023 through online courses and projects. Since
           then, I&apos;ve learned and am still learning modern web technologies.
         </p>

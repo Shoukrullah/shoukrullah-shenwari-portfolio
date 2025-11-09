@@ -15,7 +15,7 @@ function WhoImI() {
           <span>
             <RxBorderSolid />
           </span>
-          <p>It&apos;s Shoukrullah Shenwari a Front-End Web Developer.</p>
+          <p>It&apos;s Shoukrullah Shenwari a Frontend and Backend Web Developer.</p>
         </div>
       </FadeInContainer>
       <FadeInContainer

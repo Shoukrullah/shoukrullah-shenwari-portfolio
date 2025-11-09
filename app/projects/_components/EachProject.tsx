@@ -1,88 +1,128 @@
+"use client";
 import { ProjectShape } from "@/app/_lib/projects";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 import styles from "./Projects.module.css";
 
 import {
-  ECommerce,
-  IssueTracker,
-  MyPortfolio,
-  OurCompany,
-  ShenwariFood,
+  e1,
+  e2,
+  game1,
+  game2,
+  game3,
+  issue1,
+  issue2,
+  issue3,
+  issue4,
+  map1,
+  map2,
+  map3,
+  map4,
+  map5,
+  company1,
+  wild1,
+  wild2,
+  wild3,
+  wild4,
+  wild5,
+  wild6,
+  wild7,
+  peshgam1,
+  peshgam2,
+  peshgam10,
+  peshgam3,
+  peshgam4,
+  peshgam5,
+  peshgam6,
+  peshgam7,
+  peshgam8,
+  peshgam9,
 } from "./indexForImages";
-import {
-  RiCss3Fill,
-  RiHtml5Fill,
-  RiNextjsFill,
-  RiReactjsFill,
-} from "react-icons/ri";
-import { SiMysql, SiPrisma, SiReactquery, SiTypescript } from "react-icons/si";
-import { RxArrowTopRight, RxGithubLogo } from "react-icons/rx";
+
 import ScrollFadeIn from "@/app/_animations/ScrollFadeIn";
+import { useState } from "react";
+import Card from "./Card";
+
 interface Props {
   data: ProjectShape;
   index: number;
 }
+
 function EachProject({ data, index }: Props) {
-  const { image, title, description, technologies } = data;
-  const imgMap: { [key: string]: StaticImageData } = {
-    issueTracker: IssueTracker,
-    ECommerce: ECommerce,
-    ShenwariPortfolio: OurCompany,
-    ShenwariRestaurant: ShenwariFood,
-    shoukrullah: MyPortfolio,
+  const [open, setOpen] = useState(false);
+
+  const { screenshots } = data;
+
+  const screenshotMap: { [key: string]: StaticImageData } = {
+    e1,
+    e2,
+    game1,
+    game2,
+    game3,
+    issue1,
+    issue2,
+    issue3,
+    issue4,
+    map1,
+    map2,
+    map3,
+    map4,
+    map5,
+    company1,
+    wild1,
+    wild2,
+    wild3,
+    wild4,
+    wild5,
+    wild6,
+    wild7,
+    peshgam1,
+    peshgam2,
+    peshgam10,
+    peshgam3,
+    peshgam4,
+    peshgam5,
+    peshgam6,
+    peshgam7,
+    peshgam8,
+    peshgam9,
   };
-  const iconMap: { [key: string]: React.ReactNode } = {
-    nextjs: <RiNextjsFill />,
-    react: <RiReactjsFill />,
-    typeScript: <SiTypescript />,
-    prisma: <SiPrisma />,
-    reactQuery: <SiReactquery />,
-    mySql: <SiMysql />,
-    css: <RiCss3Fill />,
-    html: <RiHtml5Fill />,
-  };
+
+  const validScreenshots =
+    screenshots?.filter((key) => screenshotMap[key]) || [];
+
+  const slides = validScreenshots.map((key) => ({
+    src: screenshotMap[key].src,
+  }));
+
   return (
-    <ScrollFadeIn
-      className={`${styles.parentContainer}}`}
-      isList={true}
-      delay={0.2}
-      stiffness={90}
-    >
-      <div className={styles.imgContainer}>
-        <Image
-          src={imgMap[image]}
-          alt={title}
-          placeholder="blur"
-          quality={50}
-          className={index === 4 ? styles.lastImg : ""}
+    <>
+      <ScrollFadeIn
+        className={`${styles.parentContainer}`}
+        isList={true}
+        delay={0.2}
+        stiffness={90}
+      >
+        <Card
+          data={data}
+          index={index}
+          validScreenshots={validScreenshots}
+          setOpen={() => setOpen(true)}
         />
-        {/* <p className={styles.dataType}>{data.type || null}</p> */}
-      </div>
-      <div className={styles.contentContainer}>
-        <h4>{title}</h4>
-        <ul className={styles.iconUL}>
-          {technologies.map((icon, index) => (
-            <li key={index}>
-              <span>{iconMap[icon]}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="paragraph-color--2">{description}</p>
-        <div className={styles.anchorsContainer}>
-          <button className={styles.viewOnline}>
-            View <RxArrowTopRight />
-          </button>
-          <a
-            href="#"
-            target="_blank"
-            className={styles.github}
-            rel="noopener noreferrer"
-          >
-            <RxGithubLogo />
-          </a>
-        </div>
-      </div>
-    </ScrollFadeIn>
+      </ScrollFadeIn>
+
+      {validScreenshots.length > 0 && (
+        <Lightbox
+          open={open}
+          close={() => setOpen(false)}
+          slides={slides}
+          plugins={[Zoom]}
+          carousel={{ finite: true }}
+        />
+      )}
+    </>
   );
 }
 

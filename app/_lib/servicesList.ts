@@ -38,7 +38,7 @@ const servicesList: ServicesShape[] = [
     id: 5,
     label: "Website Optimization.",
     description:
-      "Improve speed, SEO, and accessibility for better performance and ranking.",
+      "Improve speed, Security, SEO, and accessibility for better performance and ranking.",
     icon: "SEO",
   },
   {

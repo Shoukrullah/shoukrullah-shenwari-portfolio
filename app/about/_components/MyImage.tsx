@@ -6,7 +6,7 @@ function MyImage() {
   return (
     <div className={styles.photoContainer}>
       <FadeInContainer y={0} x={-50} stiffness={90}>
-        <Image src={logo} alt="Shoukrullah Shenwari" quality={60} />
+        <Image src={logo} alt="Shoukrullah Shenwari" quality={60} placeholder="blur" />
       </FadeInContainer>
     </div>
   );

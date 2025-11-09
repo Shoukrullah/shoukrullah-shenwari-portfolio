@@ -12,8 +12,8 @@ function MyInfo() {
           About Me
         </Heading>
         <p className="paragraph-color--2">
-          I&apos;m a <strong>Front-End Developer</strong> who loves turning
-          ideas into clean, fast, responsive and user-friendly websites.
+          I&apos;m a <strong>Full-Stack Web Developer</strong> who loves turning
+          ideas into clean, fast, responsive and user-friendly web applications.
         </p>
       </FadeInContainer>
       <div className={styles.infoAndUlContainer}>

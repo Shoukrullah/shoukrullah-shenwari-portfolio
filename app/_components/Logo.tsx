@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { CiBarcode } from "react-icons/ci";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
 
 function Logo() {
   return (
     <div>
       <Link href={"/"}>
-        <CiBarcode fill="var(--primary--color)" /> Shenwari
+        <MdOutlineTipsAndUpdates fill="var(--primary--color)" /> Shenwari
       </Link>
     </div>
   );

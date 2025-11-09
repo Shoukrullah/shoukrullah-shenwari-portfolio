@@ -8,7 +8,7 @@
 .eachServicesContainer li {
   box-shadow: 0 0 3px 1px var(--shadow--services);
   height: 100%;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 0.3rem;
   transition: box-shadow .21s;
   margin-bottom: 1rem;

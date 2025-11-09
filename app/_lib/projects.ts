@@ -6,11 +6,72 @@ export interface ProjectShape {
   date: Date;
   technologies: string[];
   github?: string;
-  visitLink?: string ;
+  visitLink?: string;
   type?: string;
+  screenshots?: string[];
 }
 
 const projects: ProjectShape[] = [
+  {
+    id: 13,
+    title: "Peshgam High School",
+    description: "A Full-Stack application for high school management system.",
+    image: "peshgam",
+    date: new Date("2025/11/20"),
+    technologies: [
+      "react",
+      "typeScript",
+      "prisma",
+      "reactQuery",
+      "mySql",
+      "nodejs",
+      "expressjs",
+      "css",
+      "html",
+    ],
+    type: "School management",
+    visitLink: "jjfgj",
+    screenshots: [
+      "peshgam1",
+      "peshgam2",
+      "peshgam3",
+      "peshgam4",
+      "peshgam5",
+      "peshgam6",
+      "peshgam7",
+      "peshgam8",
+      "peshgam9",
+      "peshgam10",
+    ],
+  },
+  {
+    id: 12,
+    title: "Wild Oasis",
+    description: "A full stack application for  for tourism information.",
+    image: "wildOasis",
+    date: new Date("2025/11/14"),
+    technologies: [
+      "nextjs",
+      "react",
+      "typeScript",
+      "prisma",
+      "reactQuery",
+      "mySql",
+      "css",
+      "html",
+    ],
+    type: "Tourism info provider",
+    visitLink: "jjfgj",
+    screenshots: [
+      "wild1",
+      "wild2",
+      "wild3",
+      "wild4",
+      "wild5",
+      "wild6",
+      "wild7",
+    ],
+  },
   {
     id: 1,
     title: "Issue Tracker",
@@ -28,7 +89,48 @@ const projects: ProjectShape[] = [
       "html",
     ],
     type: "Error Tracking",
-    visitLink:'jjfgj'
+    visitLink: "jjfgj",
+    screenshots: ["issue1", "issue2", "issue3", "issue4"],
+  },
+  {
+    id: 10,
+    title: "Game Hub",
+    description: "A single page application for game lovers.",
+    image: "gameHub",
+    date: new Date("2025/1/23"),
+    technologies: ["react", "typeScript", "reactQuery", "css", "html"],
+    type: "business application",
+    visitLink: "jjfgj",
+    screenshots: ["game1", "game2", "game3"],
+  },
+  {
+    id: 11,
+    title: "Your Adventure To Afghanistan",
+    description: "Tracking your experience in Afghanistan.",
+    image: "tripAfghanistan",
+    date: new Date("2024/11/23"),
+    technologies: ["react", "typeScript", "css", "html"],
+    type: "business application",
+    visitLink: "jjfgj",
+    screenshots: ["map1", "map2", "map3", "map4", "map5"],
+  },
+  {
+    id: 5,
+    title: "Shoukrullah Shenwari",
+    description: "A portfolio website for Shoukrullah Shenwari.",
+    image: "shoukrullah",
+    date: new Date("2025/7/19"),
+    technologies: ["nextjs", "react", "typeScript", "css", "html"],
+    type: "Portfolio",
+  },
+  {
+    id: 7,
+    title: "React Quiz",
+    description: "A React quiz for understanding the basis of React.",
+    image: "Quiz",
+    date: new Date("2025/9/5"),
+    technologies: ["react", "typeScript", "css", "html"],
+    type: "Education",
   },
   {
     id: 2,
@@ -36,8 +138,9 @@ const projects: ProjectShape[] = [
     description: "An E-Commerce application with Afghani brands.",
     image: "ECommerce",
     date: new Date("2025/4/5"),
-    technologies: ["react", "css", "html"],
+    technologies: ["css", "html"],
     type: "Portfolio",
+    screenshots: ["e1", "e2"],
   },
   {
     id: 3,
@@ -47,6 +150,7 @@ const projects: ProjectShape[] = [
     date: new Date("2023/4/12"),
     technologies: ["css", "html"],
     type: "Portfolio",
+    screenshots: ["company1"],
   },
   {
     id: 4,
@@ -54,26 +158,9 @@ const projects: ProjectShape[] = [
     description: "A portfolio website for Shenwari Restaurant.",
     image: "ShenwariRestaurant",
     date: new Date("2024/1/20"),
-    technologies: ["react", "css", "html"],
+    technologies: ["css", "html"],
     type: "Portfolio",
-  },
-  {
-    id: 5,
-    title: "Shoukrullah Shenwari",
-    description: "A portfolio website for Myself.",
-    image: "shoukrullah",
-    date: new Date("2025/7/19"),
-    technologies: ["nextjs", "react", "typeScript", "css", "html"],
-    type: "Portfolio",
-  },
-  {
-    id: 6,
-    title: "Digital Products",
-    description: "An E-Commerce application with Afghani brands.",
-    image: "ECommerce",
-    date: new Date("2025/4/5"),
-    technologies: ["react", "css", "html"],
-    type: "Portfolio",
+    screenshots: ["food"],
   },
 ];
 
