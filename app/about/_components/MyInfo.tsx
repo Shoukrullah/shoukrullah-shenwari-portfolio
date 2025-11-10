@@ -28,10 +28,9 @@ function MyInfo() {
               <RxDrawingPin />
             </span>
             <p className={styles.justify}>
-              My goal is to keep learning and growing as a developer by building
-              amazing websites and working on real-world projects that helps
-              people. i&apos;m especially interested in performance
-              optimization, animation and improving user experience.
+              I&apos;m committed to continuous learning through real-world
+              projects and enhancing user experience with modern web
+              technologies.
             </p>
           </div>
         </FadeInContainer>

@@ -1,3 +1,4 @@
+import { RxArrowTopRight } from "react-icons/rx";
 import ScrollFadeIn from "../_animations/ScrollFadeIn";
 import myWorkPattern from "../_lib/myWorkPattern";
 import EachWork from "./EachWork";
@@ -35,7 +36,7 @@ function HowDoIWork() {
             blessings of Almighty God. Without his mercy, I would not be where I
             am today.
           </p>
-          <LinkTo href="/contact">Contact Me</LinkTo>
+          <LinkTo marginTop={10} href="/services">Our Services <RxArrowTopRight /></LinkTo>
         </ScrollFadeIn>
       </div>
     </div>

@@ -44,11 +44,11 @@
   color: var(--primary--color);
 }
 .infoAndUlContainer ul li p:nth-child(2) {
-  font-weight: 600;
-  color: var(--dark--brand--3);
+  /* font-weight: 600; */
+  color: var(--dark--brand--1);
 }
 .infoAndUlContainer ul li p:nth-child(3) {
-  color: var(--dark--brand--1);
+  color: var(--dark--brand--3);
 }
 .goal {
   display: flex;
@@ -74,6 +74,9 @@
 @media screen and (max-width: 992px) {
   .infoAndUlContainer ul {
     grid-template-columns: 1fr;
+  }
+  .infoAndUlContainer ul {
+    padding-top: 3rem;
   }
 }
 @media screen and (min-width: 992px) {

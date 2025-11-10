@@ -16,11 +16,6 @@ const myInfo: MyInfoShape[] = [
     info: "23 Dec 2003",
   },
   {
-    id: 3,
-    label: "Website",
-    info: "www.example.com",
-  },
-  {
     id: 4,
     label: "Phone",
     info: "+93 728131873",

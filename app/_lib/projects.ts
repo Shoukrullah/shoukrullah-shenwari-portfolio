@@ -47,7 +47,7 @@ const projects: ProjectShape[] = [
   {
     id: 12,
     title: "Wild Oasis",
-    description: "A full stack application for  for tourism information.",
+    description: "A full stack application for tourism information.",
     image: "wildOasis",
     date: new Date("2025/11/14"),
     technologies: [

@@ -14,8 +14,8 @@ function TakeOurServices() {
             Let&apos;s make your website with latest technologies. We grantee
             best performance and clean design.
           </p>
-          <LinkTo href="/contact" marginTop={10}>
-            Contact Me <RxArrowTopRight />
+          <LinkTo href="/projects" marginTop={10}>
+            My Projects <RxArrowTopRight />
           </LinkTo>
         </div>
       </ScrollFadeIn>

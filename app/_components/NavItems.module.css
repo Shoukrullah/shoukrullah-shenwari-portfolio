@@ -16,24 +16,23 @@
   color: var(--dark--brand--1);
 }
 .navContainer ul li:hover::after {
-    content: '';
-    position: absolute;
-    width: 40%;
-    height: .1rem;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary--color);
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary--color);
 }
- .activeLink::after {
-  content: '';
-    position: absolute;
-    width: 40%;
-    height: .1rem;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary--color);
-} 
-
+.activeLink::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary--color);
+}
 
 .active ul {
   display: flex;
@@ -43,15 +42,15 @@
   top: 0;
   position: fixed;
   z-index: 99999999;
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.438);
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(.6rem);
+  backdrop-filter: blur(1rem);
 }
 .active ul li {
-  color: rgba(255, 255, 255, 0.699) !important;
+  color: var(--light--brand--2);
 }
 .active ul li:hover {
   color: white !important;
@@ -68,15 +67,22 @@
   color: var(--error--brand--2);
 }
 
-
 .activeLinkRes {
   color: var(--light--brand--1) !important;
 }
 
-
-@media screen and (min-width:768px) {
+@media screen and (max-width: 768px) {
+  .navContainer ul li {
+    color: var(--dark--brand--1);
+  }
+  .activeLink::after {
+    height: .2rem;
+    width: 50%;
+    top: 104%;
+  }
+}
+@media screen and (min-width: 768px) {
   .navContainer ul {
     display: flex;
   }
-  
 }
