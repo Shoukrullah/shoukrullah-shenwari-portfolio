@@ -20,24 +20,23 @@ function WhoImI() {
           </p>
         </div>
       </FadeInContainer>
-      <FadeInContainer
-        className={styles.linkContainer}
-        y={0}
-        x={-50}
-        delay={0.3}
-      >
-        <LinkTo bgColor="var(--primary--color)" href="/about">
-          About Me
-        </LinkTo>
-        <LinkTo
-          download
-          target
-          bgColor="var(--dark--brand--2)"
-          href="/Shoukrullah shenwari CV.pdf"
-        >
-          My Resume <RxDownload />
-        </LinkTo>
-      </FadeInContainer>
+      <div className={styles.linkContainer}>
+        <FadeInContainer y={0} x={-50} delay={0.3}>
+          <LinkTo bgColor="var(--primary--color)" href="/about">
+            About Me
+          </LinkTo>
+        </FadeInContainer>
+        <FadeInContainer type="tween" y={0} x={50}  delay={0.3}>
+          <LinkTo
+            download
+            target
+            bgColor="var(--dark--brand--2)"
+            href="/Shoukrullah shenwari CV.pdf"
+          >
+            My Resume <RxDownload />
+          </LinkTo>
+        </FadeInContainer>
+      </div>
     </div>
   );
 }
