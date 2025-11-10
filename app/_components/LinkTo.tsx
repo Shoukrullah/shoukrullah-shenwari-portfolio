@@ -9,17 +9,35 @@ interface Props {
   width?: string;
   bgColor?: string;
   fontSize?: string;
+  target?: boolean;
+  download?: boolean;
 }
 
-function LinkTo({ children, href, marginTop, width, bgColor,fontSize }: Props) {
+function LinkTo({
+  children,
+  href,
+  marginTop,
+  width,
+  bgColor,
+  fontSize,
+  target = false,
+  download = false,
+}: Props) {
   const newStyles: CSSProperties = {
     marginTop: marginTop + "px",
     width,
     backgroundColor: bgColor,
-    fontSize
+    fontSize,
   };
   return (
-    <Link href={href} className={styles.Link} style={newStyles}>
+    <Link
+      href={href}
+      className={styles.Link}
+      download={download}
+      rel="oopener noreferrer"
+      target={target ? "_blank" : ""}
+      style={newStyles}
+    >
       {children}
     </Link>
   );
