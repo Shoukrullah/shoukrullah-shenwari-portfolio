@@ -5,25 +5,23 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import formSchema from "../_lib/formSchema";
 import { toast, Toaster } from "react-hot-toast";
-import { RxCheck } from "react-icons/rx";
 import ScrollFadeIn from "../_animations/ScrollFadeIn";
 
 function Form() {
   const {
     register,
     handleSubmit,
-    reset,
+    // reset,
     formState: { errors, dirtyFields, isSubmitting },
   } = useForm<FormShape>({ resolver: zodResolver(formSchema) });
   type FormShape = z.infer<typeof formSchema>;
 
   const onSubmit = (data: FormShape) => {
     console.log(data);
-    toast("Thank you! We will answer just a bit later.", {
+    toast.error("We can't send your message please try another way!", {
       style: { textAlign: "center" },
-      icon: <RxCheck size={40} color=" #4a5568" />,
     });
-    reset();
+    // reset();
   };
   return (
     <>
