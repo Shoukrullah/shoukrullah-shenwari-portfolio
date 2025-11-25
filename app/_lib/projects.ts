@@ -30,7 +30,8 @@ const projects: ProjectShape[] = [
       "html",
     ],
     type: "School management",
-    visitLink: "jjfgj",
+    github:
+      "https://github.com/Shoukrullah/Peshgam-high-school-management-system-frontend",
     screenshots: [
       "peshgam1",
       "peshgam2",
@@ -61,7 +62,7 @@ const projects: ProjectShape[] = [
       "html",
     ],
     type: "Tourism info provider",
-    visitLink: "jjfgj",
+    github: "https://github.com/Shoukrullah/wild-oasis",
     screenshots: [
       "wild1",
       "wild2",
@@ -89,7 +90,7 @@ const projects: ProjectShape[] = [
       "html",
     ],
     type: "Error Tracking",
-    visitLink: "jjfgj",
+    github: "https://github.com/Shoukrullah/Issue-tracker",
     screenshots: ["issue1", "issue2", "issue3", "issue4"],
   },
   {
@@ -100,18 +101,18 @@ const projects: ProjectShape[] = [
     date: new Date("2025/1/23"),
     technologies: ["react", "typeScript", "reactQuery", "css", "html"],
     type: "business application",
-    visitLink: "jjfgj",
     screenshots: ["game1", "game2", "game3"],
+    github: "https://github.com/Shoukrullah/game-hub",
   },
   {
     id: 11,
+    github: "https://github.com/Shoukrullah/your-adventure-to-Afghanistan",
     title: "Your Adventure To Afghanistan",
     description: "Tracking your experience in Afghanistan.",
     image: "tripAfghanistan",
     date: new Date("2024/11/23"),
     technologies: ["react", "typeScript", "css", "html"],
     type: "business application",
-    visitLink: "jjfgj",
     screenshots: ["map1", "map2", "map3", "map4", "map5"],
   },
   {
@@ -131,6 +132,7 @@ const projects: ProjectShape[] = [
     date: new Date("2025/9/5"),
     technologies: ["react", "typeScript", "css", "html"],
     type: "Education",
+    github: "https://github.com/Shoukrullah/react-quiz",
   },
   {
     id: 2,

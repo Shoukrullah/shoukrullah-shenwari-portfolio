@@ -42,7 +42,7 @@
   transition: all 0.11s linear;
 }
 
-.socialMediaContainer span {
+.socialMediaContainer span a {
   width: 3rem;
   height: 3rem;
   background-color: var(--secondary--color);

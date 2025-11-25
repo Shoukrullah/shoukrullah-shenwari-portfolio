@@ -11,6 +11,7 @@ function Form() {
   const {
     register,
     handleSubmit,
+    
     // reset,
     formState: { errors, dirtyFields, isSubmitting },
   } = useForm<FormShape>({ resolver: zodResolver(formSchema) });
@@ -18,7 +19,7 @@ function Form() {
 
   const onSubmit = (data: FormShape) => {
     console.log(data);
-    toast.error("We can't send your message please try another way!", {
+    toast.error("We can't send your message, Please try another way!", {
       style: { textAlign: "center" },
     });
     // reset();

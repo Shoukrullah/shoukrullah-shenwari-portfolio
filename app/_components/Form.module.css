@@ -77,8 +77,12 @@
 .submit button:hover {
   opacity: .9;
 }
-.submit button:active {
+/* .submit button:active {
   transform: translateY(-1px);
+} */
+.submit button:disabled {
+  background-color: var(--dark--brand--4);
+  cursor: not-allowed;
 }
 .error {
   position: absolute;

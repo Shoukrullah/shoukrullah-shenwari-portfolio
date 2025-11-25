@@ -4,35 +4,41 @@ interface Props {
   data: ProjectShape;
   index: number;
   validScreenshots: string[];
-  setOpen: ()=> void
+  setOpen: () => void;
 }
 
 import { ProjectShape } from "@/app/_lib/projects";
 import Image, { StaticImageData } from "next/image";
 import {
-    RiCss3Fill,
-    RiHtml5Fill,
-    RiNextjsFill,
-    RiNodejsFill,
-    RiReactjsFill,
+  RiCss3Fill,
+  RiHtml5Fill,
+  RiNextjsFill,
+  RiNodejsFill,
+  RiReactjsFill,
 } from "react-icons/ri";
 import { RxArrowTopRight, RxGithubLogo } from "react-icons/rx";
-import { SiExpress, SiMysql, SiPrisma, SiReactquery, SiTypescript } from "react-icons/si";
+import {
+  SiExpress,
+  SiMysql,
+  SiPrisma,
+  SiReactquery,
+  SiTypescript,
+} from "react-icons/si";
 import "yet-another-react-lightbox/styles.css";
 import {
-    ECommerce,
-    IssueTracker,
-    MyPortfolio,
-    OurCompany,
-    Quiz,
-    ShenwariFood,
-    gameHub,
-    tripAfghanistan,
-    wild1,
-    peshgam1
+  ECommerce,
+  IssueTracker,
+  MyPortfolio,
+  OurCompany,
+  Quiz,
+  ShenwariFood,
+  gameHub,
+  tripAfghanistan,
+  wild1,
+  peshgam1,
 } from "./indexForImages";
 import styles from "./Projects.module.css";
-function Card({ data, index,validScreenshots,setOpen }: Props) {
+function Card({ data, index, validScreenshots, setOpen }: Props) {
   const { image, title, description, technologies } = data;
 
   const imgMap: { [key: string]: StaticImageData } = {
@@ -45,7 +51,7 @@ function Card({ data, index,validScreenshots,setOpen }: Props) {
     tripAfghanistan,
     gameHub,
     wildOasis: wild1,
-    peshgam: peshgam1
+    peshgam: peshgam1,
   };
   const iconMap: { [key: string]: React.ReactNode } = {
     nextjs: <RiNextjsFill />,
@@ -57,7 +63,7 @@ function Card({ data, index,validScreenshots,setOpen }: Props) {
     css: <RiCss3Fill />,
     html: <RiHtml5Fill />,
     nodejs: <RiNodejsFill />,
-    expressjs: <SiExpress />
+    expressjs: <SiExpress />,
   };
   return (
     <>
@@ -90,14 +96,16 @@ function Card({ data, index,validScreenshots,setOpen }: Props) {
           >
             Screenshots <RxArrowTopRight />
           </button>
-          <a
-            href="#"
-            target="_blank"
-            className={styles.github}
-            rel="noopener noreferrer"
-          >
-            <RxGithubLogo />
-          </a>
+          {data.github && (
+            <a
+              href={data.github}
+              target="_blank"
+              className={styles.github}
+              rel="noopener noreferrer"
+            >
+              <RxGithubLogo />
+            </a>
+          )}
         </div>
       </div>
     </>

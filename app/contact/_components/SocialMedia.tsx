@@ -1,9 +1,7 @@
 "use client";
-import { BsYoutube } from "react-icons/bs";
-import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
-import { SiX } from "react-icons/si";
-import styles from "../page.module.css";
 import ScrollFadeIn from "@/app/_animations/ScrollFadeIn";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import styles from "../page.module.css";
 
 function SocialMedia() {
   return (
@@ -14,16 +12,17 @@ function SocialMedia() {
       className={styles.socialMediaContainer}
     >
       <span>
-        <RxLinkedinLogo />
+        <a
+          href="https://www.linkedin.com/in/shoukrullah-shenwari-abb83a2b9/"
+          target="_blank"
+        >
+          <RxLinkedinLogo />
+        </a>
       </span>
       <span>
-        <RxGithubLogo />
-      </span>
-      <span>
-        <SiX />
-      </span>
-      <span>
-        <BsYoutube />
+        <a href="https://github.com/Shoukrullah" target="_blank">
+          <RxGithubLogo />
+        </a>
       </span>
     </ScrollFadeIn>
   );
