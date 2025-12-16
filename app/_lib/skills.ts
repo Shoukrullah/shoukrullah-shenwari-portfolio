@@ -36,6 +36,11 @@ const skills: SkillsShape[] = [
     percentage: 90,
   },
   {
+    id: 13,
+    percentage: 60,
+    skill: "React Native (Expo)"
+  },
+  {
     id: 11,
     skill: "Node.js",
     percentage: 80,
@@ -53,7 +58,7 @@ const skills: SkillsShape[] = [
   {
     id: 9,
     skill: "MongoDB",
-    percentage: 80,
+    percentage: 60,
   },
   {
     id: 10,

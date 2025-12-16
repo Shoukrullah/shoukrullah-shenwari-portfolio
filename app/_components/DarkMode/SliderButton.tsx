@@ -6,6 +6,7 @@ import { MdOutlineNightlight } from "react-icons/md";
 
 function SliderButton() {
   const [isDark, setDark] = useState<boolean>(false);
+
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "dark") {

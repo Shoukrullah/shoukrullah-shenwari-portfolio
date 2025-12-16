@@ -19,7 +19,7 @@
   content: "";
   position: absolute;
   width: 40%;
-  height: 0.1rem;
+  height: 0.2rem;
   bottom: 0;
   left: 0;
   background-color: var(--primary--color);
@@ -28,7 +28,7 @@
   content: "";
   position: absolute;
   width: 40%;
-  height: 0.1rem;
+  height: 0.2rem;
   bottom: 0;
   left: 0;
   background-color: var(--primary--color);
@@ -73,7 +73,10 @@
 
 @media screen and (max-width: 768px) {
   .navContainer ul li {
-    color: var(--dark--brand--1);
+    color: var(--dark--brand--1) !important;
+  }
+  .navContainer ul li:hover {
+    color: var(--dark--brand--4) !important;
   }
   .activeLink::after {
     height: .2rem;
