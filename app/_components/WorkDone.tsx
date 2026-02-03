@@ -11,7 +11,7 @@ function WorkDone({ count, label }: Props) {
       </div>
       <div>
         <p>{count}</p>
-        
+        <p>I love Allah swt</p>
         <p>{label}</p>
       </div>
     </div>
