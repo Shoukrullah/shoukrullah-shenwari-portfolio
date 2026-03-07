@@ -1,4 +1,4 @@
-import pic from "@/public/pictures/my new photo.webp";
+import pic from "@/public/pictures/shenwari-with-suit.webp";
 import Image from "next/image";
 import FadeInContainer from "../_animations/FadeInContainer";
 

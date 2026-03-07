@@ -36,25 +36,34 @@
 
 .linkContainer {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .photoContainer {
   width: 100%;
   height: 100%;
   position: relative;
+  text-align: center;
 }
 .photoContainer img {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  position: relative;
+  top: -1.1rem;
   object-fit: cover;
-  object-position: top;
   z-index: -99999;
-  filter: grayscale(50%);
+  /* filter: grayscale(50%); */
 }
+
+@media screen and (max-width: 768px) {
+  .photoContainer img {
+    top: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .HomePageContainer {
     margin-top: 3rem;
@@ -101,7 +110,7 @@
   display: flex;
   position: absolute;
   top: 0;
-  content: '';
+  content: "";
   justify-content: center;
   align-items: center;
 }

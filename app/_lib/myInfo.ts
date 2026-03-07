@@ -28,7 +28,7 @@ const myInfo: MyInfoShape[] = [
   {
     id: 6,
     label: "Age",
-    info: 21,
+    info: 22,
   },
   {
     id: 7,

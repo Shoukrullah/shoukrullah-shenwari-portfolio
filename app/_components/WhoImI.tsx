@@ -15,9 +15,7 @@ function WhoImI() {
           <span>
             <RxBorderSolid />
           </span>
-          <p>
-            It&apos;s Shoukrullah Shenwari a Frontend and Backend Web Developer.
-          </p>
+          <p>It&apos;s Shoukrullah Shenwari a Full Stack Web Developer.</p>
         </div>
       </FadeInContainer>
       <div className={styles.linkContainer}>
@@ -26,12 +24,12 @@ function WhoImI() {
             About Me
           </LinkTo>
         </FadeInContainer>
-        <FadeInContainer type="tween" y={0} x={50}  delay={0.3}>
+        <FadeInContainer type="tween" y={0} x={50} delay={0.3}>
           <LinkTo
             download
             target
             bgColor="var(--dark--brand--2)"
-            href="/public/most latest CV 12832.pdf"
+            href="/public/Shoukrullah Shenwari upadated CV.pdf"
           >
             My Resume <RxDownload />
           </LinkTo>

@@ -7,7 +7,7 @@ function HomePageInfoArea() {
     <div>
       <FadeInContainer className={styles.workDoneArea} y={-15} stiffness={80}>
         <WorkDone count={30} label="Projects Completed" />
-        <WorkDone count={2} label="Years of Experience" />
+        <WorkDone count={3} label="Years of Experience" />
       </FadeInContainer>
       <WhoImI />
     </div>

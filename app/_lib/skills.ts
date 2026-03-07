@@ -16,6 +16,21 @@ const skills: SkillsShape[] = [
     percentage: 95,
   },
   {
+    id: 19,
+    skill: "SASS",
+    percentage: 80,
+  },
+  {
+    id: 5,
+    skill: "TailwindCSS",
+    percentage: 80,
+  },
+  {
+    id: 14,
+    percentage: 90,
+    skill: "Responsive Design",
+  },
+  {
     id: 3,
     skill: "JavaScript",
     percentage: 85,
@@ -25,30 +40,47 @@ const skills: SkillsShape[] = [
     skill: "TypeScript",
     percentage: 85,
   },
-  {
-    id: 5,
-    skill: "TailwindCSS",
-    percentage: 80,
-  },
+
   {
     id: 6,
     skill: "React",
     percentage: 90,
   },
   {
+    id: 7,
+    skill: "Next.js",
+    percentage: 90,
+  },
+  {
     id: 13,
     percentage: 60,
-    skill: "React Native (Expo)"
+    skill: "React Native (Expo)",
   },
   {
     id: 11,
     skill: "Node.js",
     percentage: 80,
   },
+
   {
-    id: 7,
-    skill: "Next.js",
+    id: 15,
+    percentage: 40,
+    skill: "Python",
+  },
+  {
+    id: 16,
+    percentage: 60,
+    skill: "Docker",
+  },
+  {
+    id: 17,
     percentage: 90,
+    skill: "Authentication (JWT,OAuth)",
+  },
+  {
+    id: 18,
+    percentage: 90,
+    skill: "Deployment (Vercel/Netlify)",
   },
   {
     id: 8,
@@ -70,6 +102,5 @@ const skills: SkillsShape[] = [
     skill: "Prisma",
     percentage: 90,
   },
-
 ];
 export default skills;
