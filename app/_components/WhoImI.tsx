@@ -29,7 +29,7 @@ function WhoImI() {
             download
             target
             bgColor="var(--dark--brand--2)"
-            href="/public/Shoukrullah Shenwari upadated CV.pdf"
+            href="Shoukrullah-Shenwari-upadatedCV.pdf"
           >
             My Resume <RxDownload />
           </LinkTo>
